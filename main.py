@@ -1,18 +1,34 @@
-#def pz(zahldeseingangs):
-#  primzohl = True
-#  zahldeslaufens = 2
-#  print(zahldeslaufens)
-#  while zahldeslaufens < zahldeseingangs:
-#    if zahldeseingangs % zahldeslaufens == 0:
-#      primzohl = False
-      
-while True:
-  jesus = input("bitte")
-  print(jesus)
-  if 1 == 1:
+def istPrimzahl(input):
+    input = int(input)
+    prim = True
+    k = 2
+    while k*k <= input and prim == True:
+        if input % k == 0: 
+            prim = False
+        k = k+1
+    return prim
+
+#print(istPrimzahl(60))
+
+
+def primfaktoren(n):
+  faktoren = []
+  z = n
+  while z > 1:
+    k = 2
+    while k*k <= z:
+      if z % k == 0:
+        print("du huan", z, k)
+        p = k
+        faktoren.append(p)
+        z = z // p
+        k = 2
+      else: 
+        k = k + 1
+    faktoren.append(z)
     break
 
-try:
-  jj = float(jesus) + 1
-except:
-  print("error")
+    #bestimme den kleinsten Primfaktor p von z mit Probedivisionen
+  return faktoren
+
+print(primfaktoren(24))
