@@ -18,7 +18,6 @@ def primfaktoren(n):
     k = 2
     while k*k <= z:
       if z % k == 0:
-        print("du huan", z, k)
         p = k
         faktoren.append(p)
         z = z // p
