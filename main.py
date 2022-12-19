@@ -8,7 +8,7 @@ def istPrimzahl(input):
         k = k+1
     return prim
 
-#print(istPrimzahl(60))
+#print(istPrimzahl(66))
 
 
 def primfaktoren(n):
