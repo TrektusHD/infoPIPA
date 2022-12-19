@@ -8,7 +8,7 @@ def istPrimzahl(input):
         k = k+1
     return prim
 
-#print(istPrimzahl(66))
+#print(istPrimzahl(67))
 
 
 def primfaktoren(n):
@@ -18,9 +18,8 @@ def primfaktoren(n):
     k = 2
     while k*k <= z:
       if z % k == 0:
-        p = k
-        faktoren.append(p)
-        z = z // p
+        faktoren.append(k)
+        z = z // k
         k = 2
       else: 
         k = k + 1
