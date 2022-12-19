@@ -10,7 +10,7 @@ def istPrimzahl(input):
 
 #print(istPrimzahl(60))
 
-gf
+
 def primfaktoren(n):
   faktoren = []
   z = n
